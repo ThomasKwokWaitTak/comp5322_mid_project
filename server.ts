@@ -20,7 +20,7 @@ app.get("/", (req: Request, res: Response) => {
 app.listen(port, () => {
   console.log(
     `⚡️[server]: Server is running at https://localhost:${
-      process.env.PORT || 8000
+      process.env.PORT || 8080
     }`
   );
 });
