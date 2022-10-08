@@ -1,0 +1,168 @@
+html {
+    font-size: 75%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-title {
+    font-size: 2rem;
+}
+
+#personal-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    min-height: 120px;
+}
+
+#name-and-id {
+    font-size: 1.7rem;
+    align-self: center;
+    padding-right: 15px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    max-width: 800px;
+}
+
+.heading {
+    width: 100%;
+    max-width: 800px;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+#skills-bar {
+    width: 60%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar{
+    position: relative;
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+
+}
+
+.bar div{
+    position: relative;
+    width: 0;
+    height: 1rem;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+#python-bar{
+    animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill{
+    100%{
+        width: 95%;
+    }
+}
+
+#data-vis-bar{
+    animation: data-vis-fill 2s forwards;
+}
+
+@keyframes data-vis-fill {
+    100%{
+        width: 90%;
+    }
+}
+
+#ml-bar{
+    animation: ml-fill 2s forwards;
+}
+
+@keyframes ml-fill{
+    100%{
+        width: 90%;
+    }
+}
+
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill{
+    100%{
+        width: 70%;
+    }
+}  
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill{
+    100%{
+        width: 70%;
+    }
+}
+
+#quotes {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote:nth-child(even) {
+    align-self: flex-end;
+}
+
+.quote:nth-child(even) > b {
+    float: right;
+}
+
+#quotes > div {
+    max-width: 60%;
+    font: 1.4rem/1.4 Georgia, serif;
+    margin-bottom: 2rem;
+}
+
+#quotes > div > b {
+    background-color: rgba(174, 202, 252, 0.501);
+    border-radius: 5px;
+}
