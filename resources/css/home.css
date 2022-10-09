@@ -159,10 +159,51 @@ html {
 #quotes > div {
     max-width: 60%;
     font: 1.4rem/1.4 Georgia, serif;
-    margin-bottom: 2rem;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 12px;
 }
 
 #quotes > div > b {
     background-color: rgba(174, 202, 252, 0.501);
     border-radius: 5px;
+    padding: 4px;
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1920px) {
+    .paragraph {
+        max-width: 850px;
+    }
+
+    #quotes {
+        max-width: 850px;
+    }
+
+    .heading {
+        max-width: 850px;
+    }
+
+    #skills-bar {
+        max-width: 750px;
+    }
+}
+
+@media only screen and (min-width: 1921px) {
+    .paragraph {
+        max-width: 950px;
+    }
+
+    #quotes {
+        max-width: 950px;
+    }
+
+    .heading {
+        max-width: 950px;
+    }
+
+    #skills-bar {
+        max-width: 850px;
+    }
 }
