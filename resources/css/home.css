@@ -156,6 +156,14 @@ html {
     float: right;
 }
 
+.quote:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.quote:nth-child(odd) > b {
+    float: left;
+}
+
 #quotes > div {
     max-width: 60%;
     font: 1.4rem/1.4 Georgia, serif;
@@ -169,6 +177,7 @@ html {
 #quotes > div > b {
     background-color: rgba(174, 202, 252, 0.501);
     border-radius: 5px;
+    margin-top: 0.5rem;
     padding: 4px;
 }
 
@@ -206,4 +215,53 @@ html {
     #skills-bar {
         max-width: 850px;
     }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+p {  
+  animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+.header {  
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.heading {  
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+#skills-bar {  
+  animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+#quotes {  
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
